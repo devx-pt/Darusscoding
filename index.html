@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>DarussTukSuk</title>
+    <link rel="stylesheet" href="css/samepage.css">
+    <link rel="stylesheet" href="css/web1.css">
+</head>
+
+<body>
+  <nav>
+    <div class="containerbar">
+      <div class="nav-con">
+        <a  href="index.html">
+          <img src="import/logo.png" alt="Logo" class="logo">
+        </a>
+        <ul class="menu">
+          <li><a href="#">ข่าวสาร</a></li>
+          <li><a href="problem.html">รายงานปัญหา</a></li>
+          <li><a href="#">แกนนำ</a></li>
+        </ul>
+        <div class="top-right-buttons">
+          <button class="btn1" onclick="openPopup('popup1')">ลงทะเบียน</button>
+          <button class="btn2" onclick="openPopup('popup2')">เข้าสู่ระบบ</button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+</body>
+
+<!------ Slider HTML Starts ------->
+<div class="slider">
+  <img src="import/ds.png">
+</div>
+<!------ Slider HTML End ------->
+  
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <div class="news-image">
+        <a href="import/rapsmak.png" data-lightbox="gallery">
+          <img src="import/rapsmak.png" alt="เปิดรับสมัครนักเรียนใหม่">
+        </a>
+      </div> 
+      <div class="card-body">
+        <h3>เปิดรับสมัครนักเรียนใหม่ ปีการศึกษา 2569</h3>
+        <p>
+          โรงเรียนดารุสสาลามเปิดรับสมัครนักเรียนใหม่ตั้งแต่วันที่ 17-18 มกราคม 2569
+          เป็นต้นไป ติดต่อสอบถามรายละเอียดเพิ่มเติมได้ที่ห้องธุรการ
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="news-image">
+        <a href="import/pramleaw.jpg" data-lightbox="gallery">
+           <img src="import/pramleaw.jpg" alt="เปิดรับสมัครนักเรียนใหม่">   
+          </a>   
+      </div> 
+      <div class="card-body">
+        <h3>พร้อมรับสมัครแล้ว!</h3>
+        <p>
+         พร้อมแล้ว!การรับสมัครนักเรียนใหม่โรงเรียนดารุสสาลาม ปีการศึกษา 2569โอกาสสำคัญในการเริ่มต้นเส้นทางการเรียนรู้ 
+        ในสถาบันที่มุ่งพัฒนาผู้เรียนให้ดีเก่ง📍 แผนผังการสมัครครบทุกขั้นตอนอยู่ในภาพ📲 สแกน QR Code เพื่อดูรายละเอียดและข้อมูลเพิ่มเติม Darussalam School 
+        – School of Leadersเริ่มต้นวันนี้ เพื่ออนาคตที่ดีกว่ด้ที่ห้องธุรการ
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="news-image">
+        <a href="import/rapsmak.png" data-lightbox="gallery">
+          <img src="import/rapsmak.png" alt="เปิดรับสมัครนักเรียนใหม่">
+        </a>
+      </div> 
+      <div class="card-body">
+        <h3>ประกาศผลสอบกลางภาค</h3>
+        <p>
+          นักเรียนสามารถตรวจสอบผลสอบกลางภาคได้ที่เว็บไซต์ของโรงเรียนหรือที่ห้องธุรการ
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="news-image">
+        <a href="import/rapsmak.png" data-lightbox="gallery">
+          <img src="import/rapsmak.png" alt="เปิดรับสมัครนักเรียนใหม่">
+        </a>
+      </div> 
+      <div class="card-body">
+        <h3>เปิดรับสมัครนักเรียนใหม่ ปีการศึกษา 2569</h3>
+        <p>
+          โรงเรียนดารุสสาลามเปิดรับสมัครนักเรียนใหม่ตั้งแต่วันที่ 17-18 มกราคม 2569
+          เป็นต้นไป ติดต่อสอบถามรายละเอียดเพิ่มเติมได้ที่ห้องธุรการ
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<!--<a href="index2.html" class="btn btn-link">
+    รายชื่อนักเรียน
+</a> -->
+
+<!-- Popup1 -->
+<div id="popup1" class="popup" aria-hidden="true" role="dialog">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup1')" aria-label="Close">&times;</span>
+    <h2>ลงทะเบียน</h2>
+    <img src="import/logo.png" alt="Logo" class="golo">
+
+    <form id="registerForm">
+      
+      <div class="name-above">
+        <label for="reg-username">ชื่อผู้ใช้</label>
+        <input id="reg-username" name="username" type="text" placeholder="ชื่อผู้ใช้" required>
+
+        <label for="reg-password">รหัสผ่าน</label>
+        <input id="reg-password" name="password" type="password" placeholder="รหัสผ่าน" required>
+      </div>
+
+      <div class="name-row">
+        <div class="name-field">
+          <label for="first-name">ชื่อจริง</label>
+          <input id="first-name" name="firstName" type="text" placeholder="ชื่อจริง" required>
+        </div>
+
+        <div class="name-field">
+          <label for="last-name">นามสกุล</label>
+          <input id="last-name" name="lastName" type="text" placeholder="นามสกุล" required>
+        </div>
+      </div>
+
+      <div class="name-row">
+        <div class="name-field">
+          <label for="class">ห้องเรียน</label>
+          <input id="class" name="classroom" type="text" placeholder="ห้องเรียน" required>
+          <label for="id number">เลขประจำตัว</label>
+          <input id="id number" name="id number" type="number" placeholder="เลขประจำตัว" required>
+        </div>
+
+        <div class="name-field">
+          <label for="number">เลขที่</label>
+          <input id="number" name="number" type="number" placeholder="เลขที่" required>
+          <label for="dob">วันเกิด</label>
+        <input id="dob" name="dateOfBirth" type="date" required>
+        </div>
+      </div>  
+
+
+      <button type="submit">สมัครสมาชิก</button>
+    </form>
+  </div>
+</div>
+
+<!-- Popup2 -->
+<div id="popup2" class="popup2" aria-hidden="true" role="dialog">
+  <div class="popup2-content">
+    <span class="close" onclick="closePopup('popup2')" aria-label="Close">&times;</span>
+    <h2>ยินดีต้อนรับสู่ DarussTukSuk</h2>
+
+    <form id="loginForm">
+      <div class="name-above1">
+        <label for="login-username">ชื่อผู้ใช้</label>
+        <input id="login-username" name="username" type="text" placeholder="ชื่อผู้ใช้" required>
+
+        <label for="login-password">รหัสผ่าน</label>
+        <input id="login-password" name="password" type="password" placeholder="รหัสผ่าน" required>
+
+      </div>
+      <div style="margin-top: 4px; margin-bottom: 4px;">
+          <a href="forgot.html" style="font-size: 12px; color: #007bff; ">ลืมรหัสผ่านใช่ไหม</a>
+      </div>
+      <button type="submit">เข้าสู่ระบบ</button> 
+
+    </form>
+  </div>
+</div>
+
+<script src="js/code1.js"></script>
+<script>
